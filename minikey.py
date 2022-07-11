@@ -1,3 +1,11 @@
+	"""
+    	PythonBitcoinMiniKey v0.1 is a stand alone Bitcoin mini private key generator
+	Source code was found on BitcoinTalk.org, and has been modified to use the
+	SystemRandom() function for secure generation of keys.
+	Change: GenerateKeys(numKeys = 21) = will freate 21 mini private keys per run.
+	
+	"""
+
 import random
 import hashlib
  
@@ -7,7 +15,8 @@ BASE58 = '23456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
 def Candidate():
     """
     Generate a random, well-formed mini private key.
-        [BASE58[ random.randrange(0,len(BASE58)) ] for i in range(29)])))
+     new version uses SystemRandom() which is safe per python docs
+     old version   [BASE58[ random.randrange(0,len(BASE58)) ] for i in range(29)])))
     """
 
     srandom = random.SystemRandom()
