@@ -2,7 +2,7 @@
     	PythonBitcoinMiniKey v0.1 is a stand alone Bitcoin mini private key generator
 	Source code was found on BitcoinTalk.org, and has been modified to use the
 	SystemRandom() function for secure generation of keys.
-	Change: GenerateKeys(numKeys = 21) = will freate 21 mini private keys per run.
+	Change: GenerateKeys(numKeys = 21) = will create 21 mini private keys per run.
 	
 	"""
 
